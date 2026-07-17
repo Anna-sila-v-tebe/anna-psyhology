@@ -86,8 +86,8 @@ border-radius:999px;
 background:var(--mint);
 color:white;
 text-decoration:none;
-font-weight:600;
-transition:.35s;
+ font-weight:700;
+    letter-spacing:0.2px;
 box-shadow:0 12px 28px rgba(139,207,185,.35);
 }
 
