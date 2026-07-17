@@ -130,9 +130,9 @@ filter:blur(30px);
 
 .hero-grid{
 display:grid;
-grid-template-columns:1.1fr .9fr;
+grid-template-columns:1fr 1fr;
 align-items:center;
-gap:70px;
+gap:60px;
 position:relative;
 z-index:2;
 }
