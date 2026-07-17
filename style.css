@@ -23,7 +23,7 @@ scroll-behavior:smooth;
 body{
 font-family:'Manrope',sans-serif;
 background:linear-gradient(180deg,#fbf8f3 0%,#fdfcf9 35%,#f8f7fb 70%,#fbf8f3 100%);
-color:var(--white);
+color:var(--text);
 line-height:1.7;
 }
 
