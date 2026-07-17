@@ -92,8 +92,8 @@ box-shadow:0 12px 28px rgba(139,207,185,.35);
 }
 
 .btn:hover{
-background:var(--mint-dark);
-transform:translateY(-3px);
+    background:#4F8D84;
+    transform:translateY(-2px);
 }
 
 .btn-large{
