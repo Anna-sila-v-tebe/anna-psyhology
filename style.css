@@ -1,85 +1,162 @@
-/* ==========================
-   Базовые настройки
-========================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #faf8f5;
-    color: #262626;
-    line-height: 1.7;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#faf8f5;
+    color:#2d2d2d;
+    line-height:1.7;
 }
 
-/* ==========================
-   Контейнер
-========================== */
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+img{
+    max-width:100%;
+    display:block;
 }
 
-/* ==========================
-   Заголовок
-========================== */
-
-header {
-    position: sticky;
-    top: 0;
-    background: rgba(250,248,245,.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid #ece7df;
-    z-index: 1000;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 0;
+header{
+    position:sticky;
+    top:0;
+    background:rgba(250,248,245,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #ece7df;
+    z-index:100;
 }
 
-.logo h2 {
-    font-size: 26px;
-    margin-bottom: 4px;
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
 }
 
-.logo p {
-    font-size: 14px;
-    color: #666;
+.logo h2{
+    font-size:28px;
 }
 
-/* ==========================
-   Кнопка
-========================== */
-
-.btn-header {
-    text-decoration: none;
-    background: #3e3a36;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 30px;
-    transition: .3s;
+.logo p{
+    color:#777;
+    font-size:14px;
 }
 
-.btn-header:hover {
-    background: #5b554f;
+.btn-header,
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#3f3a36;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:999px;
+    transition:.25s;
 }
 
-/* ==========================
-   Секции
-========================== */
+.btn-header:hover,
+.hero-btn:hover{
+    background:#5a534d;
+}
 
-section {
-    padding: 100px 0;
+section{
+    padding:90px 0;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+    min-height:80vh;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.subtitle{
+    color:#8b7355;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.15;
+    font-weight:500;
+    margin-bottom:30px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:30px;
+    max-width:560px;
+}
+
+.hero-photo{
+    flex:1;
+}
+
+blockquote{
+    font-size:34px;
+    text-align:center;
+    font-style:italic;
+    max-width:900px;
+    margin:0 auto;
+    color:#444;
+}
+
+h2{
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+footer{
+    padding:40px 0;
+    border-top:1px solid #ece7df;
+    text-align:center;
+    color:#777;
+}
+
+@media (max-width:900px){
+
+header .container{
+    flex-direction:column;
+    gap:20px;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    min-height:auto;
+}
+
+.hero p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+blockquote{
+    font-size:26px;
+}
+
+h2{
+    font-size:32px;
+}
+
 }
