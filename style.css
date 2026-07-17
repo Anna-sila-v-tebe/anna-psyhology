@@ -1,3 +1,85 @@
-body {
+/* ==========================
+   Базовые настройки
+========================== */
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf8f5;
+    color: #262626;
+    line-height: 1.7;
+}
+
+/* ==========================
+   Контейнер
+========================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================
+   Заголовок
+========================== */
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(250,248,245,.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #ece7df;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ==========================
+   Кнопка
+========================== */
+
+.btn-header {
+    text-decoration: none;
+    background: #3e3a36;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.btn-header:hover {
+    background: #5b554f;
+}
+
+/* ==========================
+   Секции
+========================== */
+
+section {
+    padding: 100px 0;
 }
