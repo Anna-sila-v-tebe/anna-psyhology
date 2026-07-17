@@ -174,10 +174,12 @@ z-index:-1;
 }
 
 .hero-photo img{
-width:100%;
-border-radius:36px;
-box-shadow:var(--shadow);
-display:block;
+    width:100%;
+    max-width:480px;
+    display:block;
+    margin-left:auto;
+    border-radius:36px;
+    box-shadow:var(--shadow);
 }
 
 section{
