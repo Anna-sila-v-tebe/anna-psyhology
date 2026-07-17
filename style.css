@@ -21,10 +21,18 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Manrope',sans-serif;
-background:linear-gradient(180deg,#fbf8f3 0%,#fdfcf9 35%,#f8f7fb 70%,#fbf8f3 100%);
-color:var(--text);
-line-height:1.7;
+    font-family:'Manrope', sans-serif;
+    color:var(--text);
+    line-height:1.7;
+}
+
+h1,
+h2,
+h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    line-height:.92;
+    letter-spacing:-.02em;
 }
 
 .container{
