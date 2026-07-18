@@ -328,6 +328,7 @@ padding:80px 0;
         order:0;
         display:flex;
         justify-content:center;
+        margin-bottom:28px;
     }
 
     .about-photo img{
