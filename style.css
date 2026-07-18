@@ -309,6 +309,14 @@ padding:80px 0;
     box-shadow:var(--shadow);
 }
 
+.desktop-photo{
+    display:block;
+}
+
+.mobile-photo{
+    display:none;
+}
+
 @media (max-width:900px){
 
     .about-grid{
