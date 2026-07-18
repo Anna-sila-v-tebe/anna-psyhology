@@ -298,12 +298,13 @@ padding:80px 0;
 }
 
 .about-photo{
-    justify-self:start;
+    float:right;
+    width:340px;
+    margin:0 0 25px 40px;
 }
 
 .about-photo img{
-    width:360px;
-    max-width:77%;
+    width:100%;
     border-radius:28px;
     display:block;
     box-shadow:var(--shadow);
