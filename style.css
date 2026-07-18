@@ -286,6 +286,31 @@ padding:80px 0;
     transform: translateY(0);
 }
 
-#about .container{
-    max-width:700px;
+.about-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:80px;
+    align-items:center;
+}
+
+.about-text{
+    max-width:650px;
+}
+
+.about-photo img{
+    width:100%;
+    border-radius:28px;
+    display:block;
+    box-shadow:var(--shadow);
+}
+
+@media (max-width:900px){
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about-photo{
+        order:-1;
+    }
 }
