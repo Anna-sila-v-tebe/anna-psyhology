@@ -874,3 +874,605 @@ h2{
     transition-delay:.36s;
 
 }
+
+/* ==========================================================
+   С ЧЕМ Я ПОМОГАЮ
+   ========================================================== */
+
+.help-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-top:60px;
+
+}
+
+.help-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:42px 36px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.help-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        180deg,
+        rgba(160,214,197,.18),
+        transparent 75%
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.help-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 35px 80px rgba(0,0,0,.12);
+
+}
+
+.help-card:hover::before{
+
+    opacity:1;
+
+}
+
+.help-icon{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:50%;
+
+    background:rgba(160,214,197,.18);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    margin-bottom:28px;
+
+}
+
+.help-card h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:34px;
+
+    font-weight:500;
+
+    margin-bottom:18px;
+
+}
+
+.help-card p{
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================================
+   ФОРМАТЫ РАБОТЫ
+   ========================================================== */
+
+.formats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:36px;
+
+    margin-top:60px;
+
+}
+
+.format-card{
+
+    background:#fff;
+
+    border-radius:34px;
+
+    padding:48px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.format-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.format-card h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:38px;
+
+    font-weight:500;
+
+    margin-bottom:18px;
+
+}
+
+.format-price{
+
+    color:var(--mint-dark);
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin:28px 0;
+
+}
+
+.format-card ul{
+
+    list-style:none;
+
+}
+
+.format-card li{
+
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:14px;
+
+}
+
+.format-card li::before{
+
+    content:"";
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--mint);
+
+    position:absolute;
+
+    left:0;
+
+    top:11px;
+
+}
+
+/* ==========================================================
+   ОТЗЫВЫ
+   ========================================================== */
+
+.reviews{
+
+    overflow:hidden;
+
+}
+
+.reviews-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-top:60px;
+
+}
+
+.review{
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:36px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.review p{
+
+    color:var(--text-light);
+
+    margin-bottom:24px;
+
+}
+
+.review-author{
+
+    font-weight:700;
+
+}
+
+.review-city{
+
+    font-size:14px;
+
+    opacity:.6;
+
+}
+
+/* ==========================================================
+   FAQ
+   ========================================================== */
+
+.faq{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.faq-item{
+
+    background:white;
+
+    border-radius:22px;
+
+    margin-bottom:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    border:none;
+
+    background:none;
+
+    padding:28px 34px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:19px;
+
+    font-weight:600;
+
+}
+
+.faq-question span:last-child{
+
+    font-size:28px;
+
+    color:var(--mint-dark);
+
+}
+
+.faq-answer{
+
+    display:none;
+
+    padding:0 34px 30px;
+
+    color:var(--text-light);
+
+}
+
+.faq-item.active .faq-answer{
+
+    display:block;
+
+}
+
+/* ==========================================================
+   CTA
+   ========================================================== */
+
+.cta{
+
+    text-align:center;
+
+}
+
+.cta-box{
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #f6f4ef
+    );
+
+    border-radius:40px;
+
+    padding:90px 70px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.cta-box h2{
+
+    margin-bottom:20px;
+
+}
+
+.cta-box p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:var(--text-light);
+
+}
+
+.cta-box .btn{
+
+    margin-top:42px;
+
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.footer{
+
+    padding:80px 0 60px;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:46px;
+
+    margin-bottom:14px;
+
+}
+
+.footer p{
+
+    color:var(--text-light);
+
+    margin-bottom:12px;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:28px;
+
+}
+
+.footer-social a{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.footer-social a:hover{
+
+    transform:translateY(-5px);
+
+    background:var(--mint);
+
+    color:white;
+
+}
+
+/* ==========================================================
+   АДАПТИВ
+   ========================================================== */
+
+@media (max-width:1100px){
+
+.help-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.reviews-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:900px){
+
+nav{
+
+display:none;
+
+}
+
+.hero-grid,
+.approach-grid,
+.formats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.approach-photo{
+
+position:relative;
+
+top:auto;
+
+}
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.help-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.reviews-grid{
+
+grid-template-columns:1fr;
+
+}
+
+h2{
+
+font-size:48px;
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+}
+
+@media (max-width:640px){
+
+section{
+
+padding:90px 0;
+
+}
+
+.hero{
+
+padding-top:130px;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.lead{
+
+font-size:17px;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:18px;
+
+}
+
+.stat-card{
+
+padding:30px 18px;
+
+}
+
+.stat-number{
+
+font-size:46px;
+
+}
+
+.stat-title{
+
+font-size:14px;
+
+}
+
+.format-card{
+
+padding:34px 28px;
+
+}
+
+.cta-box{
+
+padding:50px 30px;
+
+}
+
+.quote blockquote{
+
+font-size:36px;
+
+}
+
+}
