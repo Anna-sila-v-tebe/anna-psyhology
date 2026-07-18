@@ -4,64 +4,228 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Анна | Психолог интегративного подхода</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Версия 2.0 -->
-<!-- Этот файл является заготовкой новой структуры.
-Следующие секции уже подготовлены:
-1. Hero
-2. Блок статистики
-3. Мой подход
-4. SVG-волна
-5. Карусель дипломов
-6. Цитата
-7. Остальные разделы -->
-
 <header class="header">
-<div class="container">
-<a class="logo" href="#"><strong>Анна</strong><span>Психолог интегративного подхода</span></a>
-<nav>
-<a href="#approach">Подход</a>
-<a href="#reviews">Отзывы</a>
-<a href="#faq">FAQ</a>
-</nav>
-<a class="btn" href="#contact">Обсудить запрос</a>
-</div>
+    <div class="container">
+
+        <a class="logo" href="#">
+            <strong>Анна</strong><br>
+            <span>Психолог интегративного подхода</span>
+        </a>
+
+        <nav>
+            <a href="#approach">Подход</a>
+            <a href="#help">Запросы</a>
+            <a href="#formats">Форматы</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <a class="btn" href="#contact">Обсудить запрос</a>
+
+    </div>
 </header>
 
 <section class="hero">
-<div class="container hero-grid">
-<div class="hero-text">
-<p class="subtitle">Психолог интегративного подхода</p>
-<h1>Соединяю науку и духовность на пути к себе</h1>
-<p class="lead">Вы всё понимаете головой, но жизнь не меняется. Вместе мы создадим пространство, где внутренние изменения становятся реальными переменами.</p>
-<a class="btn btn-large" href="#contact">Обсудить запрос</a>
-</div>
 
-<div class="hero-photo">
-<img src="images/hero.jpg" alt="Анна">
-</div>
-</div>
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+
+            <p class="subtitle">
+                Психолог интегративного подхода
+            </p>
+
+            <h1>
+                Соединяю
+                науку и духовность
+                на пути к себе
+            </h1>
+
+            <p class="lead">
+                Вы всё понимаете головой, но жизнь не меняется.
+                Вместе мы создадим пространство, где внутренние изменения
+                становятся реальными переменами в жизни.
+            </p>
+
+            <a href="#contact" class="btn btn-large">
+                Обсудить запрос
+            </a>
+
+        </div>
+
+        <div class="hero-photo">
+            <img src="images/hero.jpg" alt="Анна">
+        </div>
+
+    </div>
+
 </section>
 
 <section class="stats">
+
 <div class="container">
-<p><strong>Далее будет полностью реализован блок с анимированными счётчиками.</strong></p>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<div class="stat-number" data-target="5">0</div>
+<div class="stat-title">лет опыта</div>
 </div>
+
+<div class="stat-card">
+<div class="stat-number" data-target="3000">0</div>
+<div class="stat-title">часов практики</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-number" data-target="10">0</div>
+<div class="stat-title">методов терапии</div>
+</div>
+
+<div class="stat-card">
+<div class="stat-number" data-target="90">0</div>
+<div class="stat-title">минут одна сессия</div>
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <section id="approach">
+
+<div class="container approach-grid">
+
+<div class="approach-text">
+
+<p class="section-label">
+МОЙ ПОДХОД
+</p>
+
+<h2>
+Я не верю в универсальные методы.
+Я верю в индивидуальный путь каждого человека.
+</h2>
+
+<p>
+За годы практики и обучения я собрала инструменты,
+которые помогают работать не только с мыслями,
+но и с эмоциями, телесными реакциями,
+внутренними конфликтами и глубинными сценариями.
+</p>
+
+<p>
+Поэтому я не подгоняю человека под один метод.
+Сначала мы находим истинную причину происходящего,
+а затем выбираем именно тот подход,
+который подходит вашей ситуации.
+</p>
+
+<p>
+<strong>
+Не существует волшебной таблетки.
+Но существует путь,
+который можно пройти вместе.
+</strong>
+</p>
+
+<div class="wave-divider">
+
+<svg viewBox="0 0 500 60" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M5 30
+C60 5 120 55 180 30
+S300 5 360 30
+S440 55 495 30"
+fill="none"
+stroke="#A0D6C5"
+stroke-width="2"
+stroke-linecap="round"/>
+
+</svg>
+
+</div>
+
+<div class="diploma-slider">
+
+<img src="images/diploma1.jpg" alt="">
+<img src="images/diploma2.jpg" alt="">
+<img src="images/diploma3.jpg" alt="">
+<img src="images/diploma4.jpg" alt="">
+
+</div>
+
+<p class="education-note">
+Продолжаю регулярно обучаться, чтобы использовать современные психологические подходы и наиболее эффективные методы.
+</p>
+
+</div>
+
+<div class="approach-photo">
+<img src="images/about.jpg" alt="Анна">
+</div>
+
+</div>
+
+</section>
+
+<section class="quote">
 <div class="container">
-<h2>Мой подход к работе</h2>
-<p>Полная версия будет добавлена в следующей итерации.</p>
+<blockquote>
+«Терапия — это не стать другим,
+а перестать быть тем,
+кем пришлось стать.»
+</blockquote>
+</div>
+</section>
+
+<section id="help">
+<div class="container">
+<h2>С чем я помогаю</h2>
+</div>
+</section>
+
+<section id="formats">
+<div class="container">
+<h2>Форматы работы</h2>
+</div>
+</section>
+
+<section id="reviews">
+<div class="container">
+<h2>Отзывы</h2>
+</div>
+</section>
+
+<section id="faq">
+<div class="container">
+<h2>FAQ</h2>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Готовы сделать первый шаг?</h2>
+
+<a class="btn btn-large" href="#">
+Написать мне
+</a>
+
 </div>
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
