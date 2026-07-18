@@ -306,12 +306,25 @@ padding:80px 0;
 }
 
 @media (max-width:900px){
+
     .about-grid{
         grid-template-columns:1fr;
-        gap:40px;
+        gap:30px;
     }
 
     .about-photo{
         order:-1;
+        display:flex;
+        justify-content:center;
     }
+
+    .about-photo img{
+        width:88%;
+        margin:0;
+    }
+
+    .about-text{
+        max-width:100%;
+    }
+
 }
