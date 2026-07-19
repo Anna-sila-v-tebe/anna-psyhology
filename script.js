@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initFaq();
 
+    initBackToTop();
+
+    initTiltCards();
+
+    initParallax();
+
+    initButtons();
+
 });
 
 
