@@ -1398,4 +1398,948 @@ FORMATS
     margin-bottom:42px;
 
 }
+/*======================================================
+HOW IT WORKS
+======================================================*/
+
+.steps{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.steps-wrapper{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:28px;
+
+    margin-top:80px;
+
+}
+
+.steps-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:8%;
+    right:8%;
+
+    top:44px;
+
+    height:2px;
+
+    background:linear-gradient(
+        to right,
+        var(--mint),
+        var(--lavender)
+    );
+
+    z-index:0;
+
+}
+
+.step{
+
+    position:relative;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+.step-number{
+
+    width:88px;
+    height:88px;
+
+    margin:0 auto 26px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:#fff;
+
+    border:2px solid rgba(160,214,197,.45);
+
+    box-shadow:var(--shadow);
+
+    font-family:var(--title-font);
+
+    font-size:34px;
+
+    transition:.35s;
+
+}
+
+.step:hover .step-number{
+
+    transform:translateY(-8px) scale(1.06);
+
+    background:var(--mint);
+
+}
+
+.step h3{
+
+    font-size:24px;
+
+    margin-bottom:14px;
+
+}
+
+.step p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    max-width:220px;
+
+    margin:auto;
+
+}
+
+
+
+/*======================================================
+REVIEWS
+======================================================*/
+
+.reviews{
+
+    position:relative;
+
+}
+
+.reviews-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:34px;
+
+    margin-top:70px;
+
+}
+
+.review{
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:42px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.review:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.review::before{
+
+    content:"“";
+
+    position:absolute;
+
+    top:18px;
+    left:28px;
+
+    font-size:90px;
+
+    color:rgba(160,214,197,.18);
+
+    font-family:var(--title-font);
+
+    line-height:1;
+
+}
+
+.review-text{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-bottom:34px;
+
+    line-height:1.9;
+
+}
+
+.review-author{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.review-avatar{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--mint),
+        var(--lavender)
+    );
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    color:#fff;
+
+    font-weight:700;
+
+    font-size:22px;
+
+}
+
+.review-name{
+
+    font-weight:700;
+
+    color:var(--brown);
+
+}
+
+.review-role{
+
+    font-size:15px;
+
+    color:var(--brown-light);
+
+}
+
+
+
+/*======================================================
+FAQ
+======================================================*/
+
+.faq{
+
+    position:relative;
+
+}
+
+.faq-list{
+
+    max-width:900px;
+
+    margin:70px auto 0;
+
+}
+
+.faq details{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    margin-bottom:20px;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.faq details:hover{
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.faq summary{
+
+    cursor:pointer;
+
+    list-style:none;
+
+    padding:28px 34px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:var(--brown);
+
+    position:relative;
+
+}
+
+.faq summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.faq summary::after{
+
+    content:"+";
+
+    position:absolute;
+
+    right:34px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:30px;
+
+    color:var(--mint);
+
+    transition:.3s;
+
+}
+
+.faq details[open] summary::after{
+
+    transform:translateY(-50%) rotate(45deg);
+
+}
+
+.faq-content{
+
+    padding:0 34px 30px;
+
+    color:var(--brown-light);
+
+    line-height:1.9;
+
+}
+
+
+
+/*======================================================
+FINAL CTA
+======================================================*/
+
+.final-cta{
+
+    position:relative;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.final-box{
+
+    position:relative;
+
+    padding:120px 70px;
+
+    border-radius:44px;
+
+    background:linear-gradient(
+        140deg,
+        rgba(160,214,197,.18),
+        rgba(198,183,230,.12)
+    );
+
+}
+
+.final-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:460px;
+
+    height:460px;
+
+    border-radius:50%;
+
+    background:rgba(160,214,197,.14);
+
+    left:-200px;
+
+    top:-180px;
+
+    filter:blur(18px);
+
+}
+
+.final-box::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:50%;
+
+    background:rgba(232,195,195,.18);
+
+    right:-120px;
+
+    bottom:-180px;
+
+    filter:blur(18px);
+
+}
+
+.final-box>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.final-box h2{
+
+    font-size:clamp(48px,5vw,72px);
+
+    margin-bottom:22px;
+
+}
+
+.final-box p{
+
+    font-size:22px;
+
+    max-width:700px;
+
+    margin:0 auto 42px;
+
+}
+
+/*======================================================
+FOOTER
+======================================================*/
+
+.footer{
+
+    position:relative;
+
+    margin-top:140px;
+
+    padding:90px 0 50px;
+
+    background:#ffffff;
+
+    border-top:1px solid rgba(75,47,47,.08);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:70px;
+
+    margin-bottom:60px;
+
+}
+
+.footer-logo h2{
+
+    font-size:42px;
+
+    margin-bottom:12px;
+
+}
+
+.footer-logo span{
+
+    display:block;
+
+    color:var(--brown-light);
+
+    margin-bottom:22px;
+
+}
+
+.footer-logo p{
+
+    max-width:430px;
+
+}
+
+.footer-title{
+
+    font-size:22px;
+
+    margin-bottom:24px;
+
+}
+
+.footer-nav,
+
+.footer-social{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.footer a{
+
+    transition:var(--transition);
+
+}
+
+.footer a:hover{
+
+    color:var(--mint);
+
+    padding-left:6px;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(75,47,47,.08);
+
+    padding-top:28px;
+
+    text-align:center;
+
+}
+
+.footer-copy{
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+}
+
+.footer-disclaimer{
+
+    font-size:14px;
+
+    color:#8a7d7d;
+
+    max-width:720px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+
+
+/*======================================================
+SVG WAVES
+======================================================*/
+
+.wave{
+
+    display:block;
+
+    width:100%;
+
+    line-height:0;
+
+}
+
+.wave svg{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+
+/*======================================================
+SCROLL ANIMATION
+======================================================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(45px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.fade-in{
+
+    opacity:0;
+
+    transition:opacity .9s ease;
+
+}
+
+.scale-in{
+
+    opacity:0;
+
+    transform:scale(.94);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+
+
+/*======================================================
+HOVER HELPERS
+======================================================*/
+
+.card{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+img{
+
+    transition:transform .5s ease;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.04);
+
+}
+
+
+
+/*======================================================
+TEXT SELECTION
+======================================================*/
+
+::selection{
+
+    background:var(--mint);
+
+    color:var(--brown);
+
+}
+
+
+
+/*======================================================
+SCROLLBAR
+======================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f3f0ed;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:rgba(160,214,197,.9);
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--mint);
+
+}
+
+
+
+/*======================================================
+RESPONSIVE
+======================================================*/
+
+@media(max-width:1100px){
+
+.hero-content,
+.about-content{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+}
+
+.hero-image,
+.about-image{
+
+max-width:650px;
+margin:auto;
+
+}
+
+.approach-grid,
+.formats-grid,
+.reviews-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:45px;
+
+}
+
+.steps-wrapper{
+
+grid-template-columns:repeat(3,1fr);
+
+row-gap:50px;
+
+}
+
+.steps-wrapper::before{
+
+display:none;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+section{
+
+padding:90px 0;
+
+}
+
+.hero{
+
+padding-top:150px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:24px;
+
+}
+
+.approach-grid,
+.topics-grid,
+.formats-grid,
+.reviews-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.steps-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.formats-quote{
+
+font-size:28px;
+
+}
+
+.final-box{
+
+padding:80px 36px;
+
+}
+
+.footer{
+
+margin-top:90px;
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.container{
+
+width:90%;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.section-title h2{
+
+font-size:38px;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+.hero-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.stat{
+
+padding:10px 0;
+
+}
+
+.about-text h2{
+
+font-size:38px;
+
+}
+
+.approach-card,
+.topic-card,
+.format-card,
+.review{
+
+padding:28px;
+
+}
+
+.faq summary{
+
+font-size:19px;
+
+padding:22px;
+
+}
+
+.faq-content{
+
+padding:0 22px 24px;
+
+}
+
+.final-box h2{
+
+font-size:40px;
+
+}
+
+.final-box p{
+
+font-size:19px;
+
+}
+
+.footer-logo h2{
+
+font-size:34px;
+
+}
+
+}
+
+
+
+/*======================================================
+END
+======================================================*/
 
