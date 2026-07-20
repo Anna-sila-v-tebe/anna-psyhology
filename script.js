@@ -5,21 +5,14 @@ GLOBAL
 document.addEventListener("DOMContentLoaded", () => {
 
     initHeader();
-
     initSmoothScroll();
-
     initRevealAnimation();
-
     initCounters();
-
     initFaq();
 
     initBackToTop();
-
     initTiltCards();
-
     initParallax();
-
     initButtons();
 
 });
@@ -329,28 +322,15 @@ function initTiltCards(){
 PARALLAX
 =====================================================*/
 
-function initParallax(){
-
-    const objects=document.querySelectorAll(
-
-        ".hero::before"
-
-    );
-
-    window.addEventListener("scroll",()=>{
-
-        const y=window.scrollY*.15;
+function initParallax() {
+    window.addEventListener("scroll", () => {
+        const y = window.scrollY * 0.15;
 
         document.documentElement.style.setProperty(
-
             "--parallax",
-
             `${y}px`
-
         );
-
     });
-
 }
 
 
