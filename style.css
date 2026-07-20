@@ -2212,6 +2212,10 @@ font-size:50px;
 
 }
 
+.hero .btn{
+    display: none;
+}
+
 .hero-stats{
 
 grid-template-columns:repeat(2,1fr);
