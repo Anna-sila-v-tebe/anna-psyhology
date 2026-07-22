@@ -1849,10 +1849,20 @@ FINAL CTA
 
     font-size:22px;
 
+    line-height:2.2;
+    
     max-width:700px;
 
     margin:0 auto 42px;
 
+}
+
+.final-cta-content h2{
+    margin-bottom: 35px;
+}
+
+.final-cta-content p{
+    margin-bottom: 45px;
 }
 
 /*======================================================
