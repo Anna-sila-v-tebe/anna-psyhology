@@ -1516,7 +1516,7 @@ HOW IT WORKS
 
     max-width:220px;
 
-    margin:auto;
+    margin: 0 auto 50px;
 
 }
 
@@ -1850,7 +1850,7 @@ FINAL CTA
     font-size:22px;
 
     line-height:2.2;
-    
+
     max-width:700px;
 
     margin:0 auto 42px;
