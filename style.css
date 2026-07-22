@@ -1979,11 +1979,36 @@ FOOTER
 
 .footer-bottom{
 
-    border-top:1px solid rgba(75,47,47,.08);
+    display:flex;
 
-    padding-top:28px;
+    justify-content:space-between;
 
-    text-align:center;
+    align-items:flex-start;
+
+    gap:40px;
+
+    padding-top:35px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+.footer-bottom p{
+
+    margin:0;
+
+}
+
+.footer-bottom p:first-child{
+
+    text-align:left;
+
+}
+
+.footer-bottom p:last-child{
+
+    text-align:right;
+
+    max-width:420px;
 
 }
 
