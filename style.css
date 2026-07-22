@@ -1587,6 +1587,12 @@ REVIEWS
 
 }
 
+.review-stars{
+    color:#D4AF37;
+    font-size:20px;
+    margin-bottom:18px;
+}
+
 .review-text{
 
     position:relative;
