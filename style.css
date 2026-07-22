@@ -1883,17 +1883,35 @@ FOOTER
 
     padding:90px 0 50px;
 
-    background:#ffffff;
+    background:#6B544C;
 
     border-top:1px solid rgba(75,47,47,.08);
 
+}
+
+.footer,
+.footer h2,
+.footer h3,
+.footer p,
+.footer a,
+.footer span{
+    color:#FFFFFF;
+}
+
+.footer a{
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#A0D6C5;
 }
 
 .footer-grid{
 
     display:grid;
 
-    grid-template-columns:2fr 1fr 1fr;
+    grid-template-columns:2fr 1fr 1.2fr;
 
     gap:70px;
 
