@@ -776,7 +776,7 @@ DIPLOMAS
 
     display:flex;
 
-    gap:28px;
+    gap:15px;
 
     width:max-content;
 
@@ -794,7 +794,7 @@ DIPLOMAS
 
     flex:0 0 auto;
 
-    width:200px;          /* было 270 */
+    width:150px;          /* было 270 */
 
     border-radius:18px;
 
