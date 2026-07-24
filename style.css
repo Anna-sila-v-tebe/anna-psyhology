@@ -2004,6 +2004,15 @@ FOOTER
     border-top:1px solid rgba(255,255,255,.15);
 
 }
+
+.footer-bottom p:first-child{
+    max-width:180px;
+}
+
+.footer-bottom p:last-child{
+    max-width:420px;
+}
+
 .footer-bottom p{
 
     margin:0;
