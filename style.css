@@ -2008,15 +2008,23 @@ FOOTER
 
 .footer-bottom p:first-child{
 
+    width:220px;
+
     text-align:left;
+
+    flex-shrink:0;
 
 }
 
 .footer-bottom p:last-child{
 
+    width:380px;
+
+    margin-left:auto;
+
     text-align:right;
 
-    max-width:420px;
+    flex-shrink:0;
 
 }
 
