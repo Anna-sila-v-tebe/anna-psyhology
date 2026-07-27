@@ -2367,9 +2367,16 @@ header nav:not(.mobile-nav){
 .hero h1{
 
     font-size:36px;
-    
     line-height:1.15;
+}
 
+.hero p{
+    font-size:22px;
+    line-height:1.5;
+}
+
+.hero-text{
+    gap:22px;
 }
 
 .hero .btn{
