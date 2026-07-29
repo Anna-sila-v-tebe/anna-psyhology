@@ -2437,9 +2437,9 @@ width:90%;
 }
 
 .hero h1{
+    font-size:34px;
 
-font-size:42px;
-
+    line-height:1.15;
 }
 
 .section-title h2{
