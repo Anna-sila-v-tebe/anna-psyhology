@@ -2296,6 +2296,16 @@ padding-top:150px;
 
 }
 
+.formats-cta h2{
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.formats-cta p{
+    font-size: 22px;
+    line-height: 1.5;
+}
+
 /* скрываем только основное меню */
 
 header nav:not(.mobile-nav){
